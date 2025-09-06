@@ -1,0 +1,26 @@
+title: "pr0ph3c"
+description: "Welcome to the darknet side of cybersecurity."
+baseurl: ""
+url: "https://pr0ph3c.in"
+
+# Use a custom collection so blog posts don't need date-based filenames
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Markdown + syntax highlight (defaults supported by GitHub Pages)
+markdown: kramdown
+highlighter: rouge
+
+# Build settings
+exclude:
+  - README.md
+  - node_modules
+  - package.json
+
+# Permalinks for pages
+permalink: pretty
