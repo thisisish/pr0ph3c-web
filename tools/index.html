@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools - pr0ph3c</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <h1>Tools</h1>
+  <div class="typed-text" id="typed"></div>
+  <ul>
+    <li><a href="https://github.com/pr0ph3c-ai/pr0ph3c-tools" target="_blank">Visit pr0ph3c-tools Repository</a></li>
+  </ul>
+  <a href="../index.html">Back to Home</a>
+
+  <script>
+    const text = ">> Loading red team arsenal...\n>> Fetching binaries from secure vault...\n>> Access granted.";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typed").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
